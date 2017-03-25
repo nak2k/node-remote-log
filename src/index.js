@@ -58,3 +58,12 @@ export function disableRemoteLog() {
 
   stream = null;
 }
+
+export function remoteLogInLambda(callback) {
+  enableRemoteLog();
+
+  return (err, data) => {
+    disableRemoteLog();
+    callback(err, data);
+  };
+}

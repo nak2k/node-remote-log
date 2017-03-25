@@ -1,6 +1,6 @@
 {
   "name": "remote-log",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Redirect console output to remote",
   "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
   "bugs": {

@@ -32,6 +32,18 @@ Run the script with specifying the environment variable `REMOTE_LOG`.
 REMOTE_LOG=YOUR.SERVER:PORT_NUMBER node app.js
 ```
 
+## Using in AWS Lambda
+
+``` javascript
+import { remoteLogInLambda } from 'remote-log';
+
+export function handler(event, context, callback) {
+  callback = remoteLogInLambda(callback);
+
+  // Do something.
+}
+```
+
 ## License
 
 MIT
