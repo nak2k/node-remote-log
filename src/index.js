@@ -46,7 +46,7 @@ export function disableRemoteLog() {
       configurable: true,
       value: process.stdout,
     },
-    _stdout: {
+    _stderr: {
       writable: true,
       enumerable: false,
       configurable: true,
